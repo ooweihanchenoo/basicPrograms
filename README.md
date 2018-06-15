@@ -1,4 +1,4 @@
 # basicPrograms
-nameGenerator (Python)
+name(s)Generator (Python)
 
-Rock Paper Scissor Game (Java)
+rps - Rock Paper Scissor Game (Java)
