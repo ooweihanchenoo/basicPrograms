@@ -1,17 +1,6 @@
 # Programs
-name(s)Generator (Python)
+Python
 
-rps - Rock Paper Scissor Game (Java)
+Java
 
-pwd.py - Password Generator (Python)
-
-movieReview.py - Movie Review Sentiment Analysis (Python)
-
-Printer.py - Printer (Python)
-
-DLList.py - Doubly Linked List (Python)
-
-Algorithms.py - Efficiency of Sorting Algorithms (Python)
-
-Bash Scripts are some useful Scripts for unix users
-
+HTML JAVASCRIPT CSS SQL
