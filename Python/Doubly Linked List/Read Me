@@ -1,0 +1,26 @@
+A doubly-linked list is one where each node has two references: one to the next node, and another to the previous node.
+
+__init__(self): 
+  List constructor.
+def add(self, item):
+  The method accepts as a parameter an item (not a node), which it inserts as the head element in the list
+def size(self):
+  Returns the size of the list. 1 points.
+def contains(self, item):
+  Given an item, the method returns True if the item is in the list, False otherwise. 2 points.
+def rand_init(self, list_size):
+  Fill the list with list_size number of randomly generated integers in the range 1-100 (inclusive). If the list is non-empty, delete all elements first. As an example, given that dList is a reference to a list, the call dList.rand_init(5) would put 5 randomly generated values in the list. The list size after the function call should be 5. 2 points.
+def remove_all(self, item):
+  The method removes all occurrences of item in the list. If item is not in the list, the method does nothing. For instance, if a list dList has the elements 4 4 3 4 5 4 3 4, then the call dList.remove(4) would change the list to 3 5 3. 3 points.
+def __str__(self):
+  Returns a string representation of the list (use the Python list format, e.g. [a, b, c]). 2 points.
+def append(self, item):
+  Append an item to the end of the list (Your method should use the tail reference). 1 points.
+def slice(self, start, end):
+  Given two values start and end (where start < end), return the sublist starting at position start and ending at position end-1 as a Python list. Position 0 is the head of the list. The method should check for invalid inputs, in which case it should return None. For example, if a list dList has the elements 1 2 3 4 5 6 7, then the call dList.slice(1, 3) should return [2, 3], while dList.slice(4, 4) should return [], and dList.slice(3, 10) should return None since end > list size. 3 points.
+def swap(self, i, j):
+  Given i and j, swap the list values at those positions. If either position is not valid, do nothing. As an example, if a list dList has the elements 1 2 3 4 5 6 7, then the call dList.swap(0, 3) would rearrangethelistto4231567. 2points.
+def shuffle(self):
+  Shuffle the contents of the list. Hint: you can call swap repeatedly using randomly generated list positions. The function should perform at least as many swaps as there are elements in the list. 2 points.
+def is_palindrome(self):
+  Returns True if the elements in the list form a palindrome, False otherwise. 2 points.
