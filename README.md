@@ -3,13 +3,13 @@ name(s)Generator (Python)
 
 rps - Rock Paper Scissor Game (Java)
 
-pwd.py - Password Generator
+pwd.py - Password Generator (Python)
 
-movieReview.py - Movie Review Sentiment Analysis
+movieReview.py - Movie Review Sentiment Analysis (Python)
 
-Printer.py - Printer
+Printer.py - Printer (Python)
 
-DLList.py - Doubly Linked List
+DLList.py - Doubly Linked List (Python)
 
-Algorithms.py - Efficiency of Sorting Algorithms
+Algorithms.py - Efficiency of Sorting Algorithms (Python)
 
