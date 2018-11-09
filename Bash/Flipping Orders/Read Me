@@ -1,0 +1,8 @@
+Covert the attach A.txt text based file. 
+This file contain record of dictionary mapping from simplify Chinese to traditional Chinese character.
+txt contain multiple record.
+Each record has two line separated by CR
+first line of record contain the original content
+
+Provide a script that can convert this text file to do the reverse mapping so the B.txt would contain the same format 
+But first line would be traditional Chinese character and 2nd line would be simplify Chinese character.
