@@ -10,3 +10,6 @@ movieReview.py - Movie Review Sentiment Analysis
 Printer.py - Printer
 
 DLList.py - Doubly Linked List
+
+Algorithms.py - Efficiency of Sorting Algorithms
+
