@@ -13,3 +13,5 @@ DLList.py - Doubly Linked List (Python)
 
 Algorithms.py - Efficiency of Sorting Algorithms (Python)
 
+Bash Scripts are some useful Scripts for unix users
+
