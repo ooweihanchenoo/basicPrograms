@@ -1,0 +1,147 @@
+<!--
+	Name: Wei Han Chen
+	Course: CSC235-02
+	Homework: #2
+-->
+<!doctype html>
+<html>
+
+<head><title>Coin Game</title></head>
+
+<body>
+
+	<div style="text-align:center"><h1> Coin Game </h1></div>
+	<div style="background-color:#efabef;width:100px; "><i> CSC 235 Game </i></div>
+	<br><hr><br>
+
+	<table align="center" border="2">
+		<tr><td><img src="./pix/dice0.gif" name="mydice0"></td><td><img src="./pix/dice0.gif" name="mydice1"></td></tr>
+		<tr><td style="text-align: center"> Total = </td><td id="total"> </td></tr>
+	</table>
+
+	<table align="center" border="2">
+		<tr>
+			<td rowspan="2">
+				<table border="0">
+						<tr>
+							<td style="background-color: #ef99ef;width: 20px;height: 20px" onclick="put(2)" id="s2"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(4)" id="s4"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(6)" id="s6"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(8)" id="s8"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(10)" id="s10"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(12)" id="s12"> </td>
+						</tr>
+						<tr style="text-align: center">
+							<td style="width: 20px;height: 20px"> 2 </td>
+							<td> </td>
+							<td style="width: 20px"> 4 </td>
+							<td> </td>
+							<td style="width: 20px"> 6 </td>
+							<td> </td>
+							<td style="width: 20px"> 8 </td>
+							<td> </td>
+							<td style="width: 20px"> 10 </td>
+							<td> </td>
+							<td style="width: 20px"> 12 </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px;height: 20px" onclick="put(3)" id="s3"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(5)" id="s5"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(7)" id="s7"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(9)" id="s9"> </td>
+							<td> </td>
+							<td style="background-color: #ef99ef;width: 20px" onclick="put(11)" id="s11"> </td>
+							<td> </td>
+						</tr>
+						<tr>
+							<td> </td>
+							<td style="width: 20px;height: 20px"> 3 </td>
+							<td> </td>
+							<td style="width: 20px"> 5 </td>
+							<td> </td>
+							<td style="width: 20px"> 7 </td>
+							<td> </td>
+							<td style="width: 20px"> 9 </td>
+							<td> </td>
+							<td style="width: 20px"> 11 </td>
+							<td> </td>
+						</tr>
+					</table>
+				</td>
+				<td><button type="button;" onClick="rolldice();">Roll Dice</button></td></tr>
+				<tr><td><button type="button" style="float:right;" onClick="newgame();"> New Game </button></td></tr>
+				<tr><td colspan="2">
+					<div id="status" style="border: 3px solid #00f"> Status </div>
+				</td></tr>
+			</table>
+
+
+
+<script language="JavaScript">
+
+	var face0=new Image()
+	face0.src="./pix/dice1.gif"
+	var face1=new Image()
+	face1.src="./pix/dice2.gif"
+	var face2=new Image()
+	face2.src="./pix/dice3.gif"
+	var face3=new Image()
+	face3.src="./pix/dice4.gif"
+	var face4=new Image()
+	face4.src="./pix/dice5.gif"
+	var face5=new Image()
+	face5.src="./pix/dice6.gif"
+
+	chips = 10;
+
+	c = Array( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0); 
+
+	function put(n){
+		var sts = document.getElementById("status");
+
+		if(chips>0){chips--;
+			var click = document.getElementById('s' + n);
+			c[n]++;
+			click.innerHTML=c[n];
+		}
+		if(chips>0){
+			sts.innerHTML=" Status: " + chips + " Left";
+		}
+		else{
+			sts.innerHTML=" Status: NO CHIPS LEFT!!!";
+		}
+	}
+
+	function rolldice(){
+
+		if(chips>0){chips--;
+			var randomdice=Math.round(Math.random()*5)
+			document.images["mydice0"].src=eval("face"+randomdice+".src")
+			var randomdice=Math.round(Math.random()*5)
+			document.images["mydice1"].src=eval("face"+randomdice+".src")
+
+			}
+			else{sts.innerHTML=" Status: NO CHIPS LEFT!!!"
+		}
+}
+
+	function newgame(){
+		if(chips==0){chips--
+			chips = 10
+			sts.innerHTML=" Status: NEW GAME!!!"
+
+
+
+		}		
+
+	}
+</script>
