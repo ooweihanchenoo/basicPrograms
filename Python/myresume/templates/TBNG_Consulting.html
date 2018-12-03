@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+<style>
+.left{
+float:left;
+}
+.right{
+float:right;
+}
+</style>
+
+{% block body %}
+
+<div>
+<h1 style="float: left"><b>TBNG Consulting</b></h1>
+<h1 style="float: right"><b>Milford, CT</b></h1>
+</div><br><br><br>
+<div>
+  <h5 style="float: left;"><i>Networking Technician Intern</i></h5>
+  <h5 style="float: right;"><i>January 2018 - May 2018</i></h5>
+</div><br><br>
+
+<div style="text-align: left">
+<ul style="list-style-type: square">
+<li>Troubleshoot, installed and updated necessary software on clients’ systems to keep the systems safe.</li>
+<li>Minimized network latency and downtime for client’s networks.</li>
+<li>Remotely utilized CentOS to build a web application prototype in virtual environment to manage employees’ assets.</li>
+<li>Documented, organized, and improved all necessary information for technicians to track down every unit’s detail.</li>
+</ul></div><br>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCyBHHl_bv1NN0vfbNidB5XCkOIJrZzZFI'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmaps.net'>embedding google maps</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=1ed8f6e5324bcfcb15d95d2a5cd7c0f71b8d8b8b'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:6,center:new google.maps.LatLng(41.2902012,-72.96617329999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.2902012,-72.96617329999998)});infowindow = new google.maps.InfoWindow({content:'<strong>TBNG Consulting</strong><br>500 Boston Post Road<br>Milford Connecticut<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+{% endblock %}

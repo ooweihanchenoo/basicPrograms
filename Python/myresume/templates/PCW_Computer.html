@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+<style>
+.left{
+float:left;
+}
+.right{
+float:right;
+}
+</style>
+
+{% block body %}
+<div>
+<h1 style="float: left"><b>PCW Computer</b></h1>
+<h1 style="float: right"><b>Orange, CT</b></h1>
+</div><br><br><br>
+<div>
+  <h5 style="float: left;"><i>Computer Repair Technician</i></h5>
+  <h5 style="float: right;"><i>September 2014 - Present</i></h5>
+</div><br><br>
+
+
+<div style="text-align: left">
+<ul style="list-style-type: square">
+<li>Diagnosing software and hardware issues, installing updates, new software and/or new assemblies, and removing malicious programs, files, and faulty components.</li>
+<li>Maintaining system software and data integrity to keep the system up-to-date and well secure.</li>
+<li>Retaining latest comprehensive knowledge of hardware and software to keep work efficient.</li>
+<li>Professionally handling incoming calls and inquiries from prospective clients.</li>
+<li>Supervising, instructing, and assisting new employees in reaching new levels of skills, knowledge and attitude to the manager’s expectation.</li>
+</ul></div><br>
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCyBHHl_bv1NN0vfbNidB5XCkOIJrZzZFI'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmaps.net'>embedding google maps</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e6c8300b2863d3cbfa04fd6b532db0157ff2c6d3'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:6,center:new google.maps.LatLng(41.2517638,-73.02006799999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.2517638,-73.02006799999998)});infowindow = new google.maps.InfoWindow({content:'<strong>PCW Computer</strong><br>565 Boston Post Raod<br>Orange Connecticut<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+{% endblock %}

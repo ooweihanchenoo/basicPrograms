@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+<style>
+.left{
+float:left;
+}
+.right{
+float:right;
+}
+</style>
+
+{% block body %}
+<h1><b>Education</b></h1>
+
+<div>
+<h3 style="float: left">Southern Connecticut State University</h3>
+<h3 style="float: right">New Haven, CT</h3>
+</div><br><br>
+<h5><i>Bachelor of Science, Major in Physics, Minor in Computer Science</i></h5>
+<ul style="list-style-type: square">
+<li>Active Member of Karate and Ultimate Frisbee clubs.</li>
+<li>Participated instramural basketball tournaments.</li>
+</ul>
+
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCyBHHl_bv1NN0vfbNidB5XCkOIJrZzZFI'></script><div style='overflow:hidden;height:400px;width:100%;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embedmaps.net'>embedding google maps</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=80986aacaee15875f0957787ab277614d49febe6'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:6,center:new google.maps.LatLng(41.3318336,-72.9452743),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(41.3318336,-72.9452743)});infowindow = new google.maps.InfoWindow({content:'<strong>Southern Connecticut State University</strong><br>501 Crescent St<br>06515 New Haven<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+
+
+{% endblock %}

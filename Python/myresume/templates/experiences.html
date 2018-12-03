@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1><b>Experiences</b></h1>
+	<ul class="list-group">
+	{% for experience in experiences %}
+	<li class="list-group-item"><a href="experience/{{experience.id}}">{{experience.company}}</a></li>
+	{% endfor %}
+	</ul>
+{% endblock %}
